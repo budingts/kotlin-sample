@@ -49,3 +49,6 @@ fun onlyInt(s: String): Int {
 fun th(aa:Int?):Float{
     return aa !!.toFloat(); //aa 是可空变量，饮用的时候必须双引号
 }
+fun th1(aa:Int?):Float?{
+    return aa?.toFloat(); //aa 是可空变量，饮用的时候必须双引号
+}

@@ -1,6 +1,7 @@
 package com.juanq.kotlin.example7
 
 /**
+ *  继承
  * Created by jq on 2017/5/25.
  */
 open class User{
@@ -29,7 +30,7 @@ interface Reading2{
 //能被继承的类，必须abstract 或者open 修饰
 //能被冲重写，覆盖的方法，也都必须abstract 或者open 修饰
 class Student:User(),Reading{
-    override fun study(){
+    override fun study(){ //遇到接口和父类都相同的情况
         super<User>.study()
         super<Reading>.study() //与上者至少二选其一
 
